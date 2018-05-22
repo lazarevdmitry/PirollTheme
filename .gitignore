@@ -1,0 +1,7 @@
+system/
+vendor/
+*.rst
+1/
+TODO.txt
+img/
+fonts/
