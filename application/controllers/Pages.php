@@ -37,9 +37,13 @@ class Pages extends CI_Controller {
 	{
 		$data['title']='About page';
 		$data['site_info']=$this->_get_info();
+		$this->load->model('model_about');
+		$data['about_data']=$this->model_about->get_about_page_info();
+
 		$this->load->view('templates/header',$data); // loading heading part of index page
-		$this->load->view('pages/about');
-    $this->load->view('templates/footer'); // loading footing part of index page
+
+		$this->load->view('pages/about',$data);
+    $this->load->view('templates/footer',$data); // loading footing part of index page
 	}
 	public function show_contact()
 	{
@@ -50,6 +54,16 @@ class Pages extends CI_Controller {
 		$this->load->view('templates/header',$data); // loading heading part of index page
 		$this->load->view('pages/contact');
     $this->load->view('templates/footer'); // loading footing part of index page
+	}
+	public function post_form_data(){
+		$data["name"]=$this->input->post("name");
+		$data["email"]=$this->input->post("email");
+		$data["title"]=$this->input->post("title");
+		$data["message"]=$this->input->post("message");
+		//i need to put here Referer's URL and push it to the view
+
+		$this->load->model('model_form');
+		$this->model_form->set_form_data($data);
 	}
 	public function show_404(){
 		show_404();

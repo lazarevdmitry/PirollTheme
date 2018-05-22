@@ -13,14 +13,14 @@
           </div>
         </div>
         <div class="review-form col-lg-7 col-md-6 col-sm-6 col-xs-12">
-          <form class="row" method="post">
-            <input class="col-lg-5 col-md-5 col-sm-5 col-xs-12" type="text" placeholder="Your Name">
-            <input class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-xs-12" type="email" placeholder="Your Email">
-            <input class="col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Your Title">
-            <textarea class="col-lg-12 col-md-12 col-sm-12 col-xs-12" placeholder="Your Comment"></textarea>
+          <form class="row" method="post" action="/form/">
+            <input class="col-lg-5 col-md-5 col-sm-5 col-xs-12" type="text" placeholder="Your Name" name="name">
+            <input class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-xs-12" type="email" placeholder="Your Email" name="email">
+            <input class="col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Your Title" name="title">
+            <textarea class="col-lg-12 col-md-12 col-sm-12 col-xs-12" placeholder="Your Comment" name="message"></textarea>
 
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-              <input type="submit" value="send message">
+              <input type="submit" value="send message" id="contact_form_submit">
               <span id="message_area"></span>
             </div>
           </form>

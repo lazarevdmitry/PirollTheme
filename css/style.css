@@ -180,6 +180,9 @@ html body .wrapper main .single-section > div span {
   color: #787878;
   font-weight: normal;
 }
+.single-section>.row{
+  display:flex;
+}
 html body .wrapper main .single-section .row > div {
   background-color: #eee;
   padding: 105px 100px 105px 100px;
@@ -284,7 +287,6 @@ html body .wrapper footer .footer-container ul li div a:hover {
 }
 .project_photo img{
   max-width: 70%;
-  max-height: 70%;
 }
 @media all and (max-width: 768px) {
   header {

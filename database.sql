@@ -141,3 +141,22 @@ INSERT INTO Projects
     "25.06.2017",
     "Facebook, Twitter, Pinterest"
   );
+
+INSERT INTO Information
+  (id,name,value)
+  VALUES
+  (10,'NameHeader','Amelia Woods'),
+  (11,'NameSubheader','I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.'),
+(12,'ProjectsAmount','548'),
+(13,'WorkingHoursAmount','1465'),
+(14,'PositiveFeedbacksAmount','612'),
+(15,'HappyClientsAmount','735');
+
+CREATE TABLE Submissions
+(
+  name varchar(250) not null,
+  email varchar(250) not null,
+  title varchar(250) not null,
+  message text not null,
+  date datetime not null
+);

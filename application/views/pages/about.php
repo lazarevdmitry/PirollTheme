@@ -1,27 +1,27 @@
 
     <main>
       <section class="section0">
-        <h1>Amelia Woods</h1>
-        <p>I am a Graphic &amp; Web Designer based in New York, <br><span>specializing in User Interface Design and Development.</span></p>
+        <h1><?php echo $about_data['NameHeader']; ?></h1>
+        <p><?php echo $about_data['NameSubheader']; ?></p>
       </section>
       <section class="section_bar">
         <div class="container">
           <ul class="row">
             <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="/img/things1.png" alt="how much projects has been completed">
 
-              <div class="things">548</div>
+              <div class="things"><?php echo $about_data['ProjectsAmount']; ?></div>
               <div class="things-actions">projects completed</div>
             </li>
             <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="/img/things2.png" alt="how much working hours has been spent">
-              <div class="things">1465</div>
+              <div class="things"><?php echo $about_data['WorkingHoursAmount']; ?></div>
               <div class="things-actions">working hours</div>
             </li>
             <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="/img/things3.png" alt="">
-              <div class="things">612</div>
+              <div class="things"><?php echo $about_data['PositiveFeedbacksAmount']; ?></div>
               <div class="things-actions">positive feedbacks</div>
             </li>
             <li class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="/img/things4.png" alt="">
-              <div class="things">735</div>
+              <div class="things"><?php echo $about_data['HappyClientsAmount']; ?></div>
               <div class="things-actions">happy clients</div>
             </li>
           </ul>

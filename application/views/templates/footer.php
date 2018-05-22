@@ -9,38 +9,38 @@
           Designed by <?php echo $dat['DesignedBy']; ?>.
         </div>
         <div itemprop="programmer">Implemented by <?php echo $dat['ImplementedBy']; ?>.</div>
-      </li>
+      </li> <!-- End of li -->
       <li class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4 col-xs-6">
         <div itemprop="email"><?php echo $dat['Email']; ?></div>
         <div itemprop="telephone"><?php echo $dat['Phone']; ?></div>
-      </li>
+      </li> <!-- End of li -->
       <li class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
         <div><a href="/projects/">projects</a></div>
         <div><a href="/about/">about</a></div>
         <div><a href="/services/">services</a></div>
         <div><a href="/career/">career</a></div>
-      </li>
+      </li> <!-- End of li-->
       <li class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
         <div><a href="/news/">news</a></div>
         <div><a href="/events/">events</a></div>
         <div><a href="/contact/">contact</a></div>
         <div><a href="/legals/">legals</a></div>
-      </li>
+      </li> <!-- End of li -->
       <li class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
         <div><a href="#" target="_blank">facebook</a></div>
         <div><a href="#" target="_blank">twitter</a></div>
         <div><a href="#" target="_blank">instagram</a></div>
         <div><a href="#" target="_blank">dribble</a></div>
-      </li>
-    </ul>
-  </div>
+      </li> <!-- End of li -->
+    </ul> <!-- End of ul.row -->
+  </div> <!-- End of .footer-container -->
 </footer>
-</div>
+</div> <!-- End of .wrapper  -->
 
     <script src="/vendor/html5shiv.min.js"></script>
     <script src="/vendor/html5shiv-printshiv.min.js"></script>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
+    <script>
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
@@ -71,6 +71,8 @@
       </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+    <script src='/vendor/components/jquery/jquery.min.js'></script>
+    <script src='/js/app.js'></script>
   </body>
 
 </html>

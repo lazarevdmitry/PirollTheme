@@ -22,6 +22,6 @@
             <li class="menuitem col-lg-4 col-md-4 col-sm-4 col-xs-12"><a href="/">home</a></li>
             <li class="menuitem col-lg-4 col-md-4 col-sm-4 col-xs-12"><a href="/about">about</a></li>
             <li class="menuitem col-lg-4 col-md-4 col-sm-4 col-xs-12"><a href="/contact">contact</a></li>
-          </ul>
-        </nav>
-      </header>
+          </ul> <!-- End of ul.row -->
+        </nav> <!-- End of nav -->
+      </header> <!-- End of .container -->

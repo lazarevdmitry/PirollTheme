@@ -24,13 +24,19 @@ class Projects extends CI_Controller {
 	}
   public function show_project_page($product_num){
     $data['title']="Project {$product_num}";
+
+		// retrives site info and pushes it to the view
     $this->load->model('model_info');
 		$data['site_info']=$this->model_info->get_site_info();
     $this->load->view('templates/header',$data);
 
+		// retrieves data for Product page
     $this->load->model('model_projects');
     $data['project_data']=$this->model_projects->get_project($product_num);
-    $this->load->view('pages/product',$data);
+		$data['prev_project_url']=$this->model_projects->get_prev_project($product_num);
+		$data['next_project_url']=$this->model_projects->get_next_project($product_num);
+    $this->load->view('pages/project',$data);
+
     $this->load->view('templates/footer',$data);
   }
 }
