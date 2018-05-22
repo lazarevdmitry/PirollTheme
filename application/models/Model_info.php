@@ -3,10 +3,10 @@
 class Model_info extends CI_Model{
   public function __construct(){
     parent::__construct();
-
+    $this->load->database();
   }
   private function _send_query($str){
-    $this->load->database();
+
     $query=$this->db->query($str);
     $result=$query->result_array();
 //    var_dump($result);
@@ -28,6 +28,7 @@ class Model_info extends CI_Model{
           name='Email' OR
           name='Fax';
     ";
+
     return $this->_send_query($query_str);
   }
   public function get_site_info(){

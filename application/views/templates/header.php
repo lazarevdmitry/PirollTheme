@@ -1,3 +1,5 @@
+<?php  $this->lang->load('main_lang.php', $this->config->item("language"));
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,6 +14,8 @@
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/html5shiv-printshiv.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -19,9 +23,27 @@
         <div class="logo col-lg-1 col-md-1 col-sm-6 col-xs-12"><a href="#"><img src="/img/logo.png" alt="logo"></a></div>
         <nav class="col-lg-3 col-lg-offset-8 col-md-3 col-md-8 col-sm-6 col-xs-12">
           <ul class="row">
-            <li class="menuitem col-lg-4 col-md-4 col-sm-4 col-xs-12"><a href="/">home</a></li>
-            <li class="menuitem col-lg-4 col-md-4 col-sm-4 col-xs-12"><a href="/about">about</a></li>
-            <li class="menuitem col-lg-4 col-md-4 col-sm-4 col-xs-12"><a href="/contact">contact</a></li>
+            <li class="menuitem col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="/">
+                <?php
+                  echo $this->lang->line('home_page');
+                ?>
+              </a>
+            </li>
+            <li class="menuitem col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="/about">
+                <?php
+                  echo $this->lang->line('about_page');
+                ?>
+              </a>
+            </li>
+            <li class="menuitem col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="/contact">
+                <?php
+                  echo $this->lang->line('contact_page');
+                ?>
+              </a>
+            </li>
           </ul> <!-- End of ul.row -->
         </nav> <!-- End of nav -->
       </header> <!-- End of .container -->

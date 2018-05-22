@@ -1,7 +1,7 @@
 system/
-vendor/
-*.rst
 1/
+database.sql
+readme.rst
 TODO.txt
-img/
-fonts/
+*.md
+src/vendor/

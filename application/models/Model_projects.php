@@ -8,15 +8,13 @@ class Model_projects extends CI_Model
   }
   public function get_projects()
   {
-    $query_str="SELECT * FROM Projects;";
-    $query=$this->db->query($query_str);
+    $query=$this->db->get("Projects");
     $result=$query->result_array();
     return $result;
   }
   public function get_project($id)
   {
-    $query_str="SELECT * FROM Projects WHERE id={$id};";
-    $query=$this->db->query($query_str);
+    $query=$this->db->get_where("Projects",array("id"=>$id));
     $result=$query->row_array();
     return $result;
   }
@@ -28,26 +26,23 @@ class Model_projects extends CI_Model
     } else
     {
       $id--;
-      $query_str="SELECT id FROM Projects WHERE id={$id};";
-      $query=$this->db->query($query_str);
+      $this->db->select("id");
+      $query=$this->db->get_where("Projects",array("id"=>$id));
       $result=$query->row_array();
       return $result;
     }
   }
   public function get_next_project($id)
   {
-    $query_str="SELECT COUNT(*) FROM Projects;";
-    $query=$this->db->query($query_str);
-    $count=$query->row_array();
-
-    if ($id==$query)
+    $count=$this->db->count_all("Projects");
+    if ($id==$count)
     {
       return NULL;
     } else
     {
       $id++;
-      $query_str="SELECT id FROM Projects WHERE id={$id};";
-      $query=$this->db->query($query_str);
+      $this->db->select("id");
+      $query=$this->db->get_where("Projects",array("id"=>$id));
       $result=$query->row_array();
       return $result;
     }

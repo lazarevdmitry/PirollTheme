@@ -3,24 +3,32 @@
     <div class="container">
       <div class="row">
         <div class="contact-info col-lg-5 col-md-6 col-sm-6 col-xs-12">
-          <h1>Contact Info:</h1>
-          <p>something</p>
+          <h1><?php echo $this->lang->line('contact_info');?></h1>
+          <p><?php echo $this->lang->line('contact_info_description');?></p>
           <div itemscope itemtype="http://schema.org/Organization">
-            <div class="contact-address">Address: <span itemprop="postalCode">10111</span><span itemprop="address">Santa Monica Boulevard, LA</span></div>
-            <div class="contact-phone">Phone: <span itemprop="telephone">+44 987 065 908</span></div>
-            <div class="contact-email">Email: <span itemprop="email">info@example.com</span></div>
-            <div class="contact-fax">Fax: <span itemprop="fax">+44 987 065 909</span></div>
+            <div class="contact-address">
+              <?php echo $this->lang->line('contact_address');?><span itemprop="postalCode">10111</span><span itemprop="address">Santa Monica Boulevard, LA</span>
+            </div>
+            <div class="contact-phone">
+              <?php echo $this->lang->line('contact_phone');?> <span itemprop="telephone">+44 987 065 908</span>
+            </div>
+            <div class="contact-email">
+              <?php echo $this->lang->line('contact_email');?> <span itemprop="email">info@example.com</span>
+            </div>
+            <div class="contact-fax">
+              <?php echo $this->lang->line('contact_fax');?> <span itemprop="fax">+44 987 065 909</span>
+            </div>
           </div>
         </div>
         <div class="review-form col-lg-7 col-md-6 col-sm-6 col-xs-12">
           <form class="row" method="post" action="/form/">
-            <input class="col-lg-5 col-md-5 col-sm-5 col-xs-12" type="text" placeholder="Your Name" name="name">
-            <input class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-xs-12" type="email" placeholder="Your Email" name="email">
-            <input class="col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="Your Title" name="title">
-            <textarea class="col-lg-12 col-md-12 col-sm-12 col-xs-12" placeholder="Your Comment" name="message"></textarea>
+            <input class="col-lg-5 col-md-5 col-sm-5 col-xs-12" type="text" placeholder="<?php echo $this->lang->line('your_name');?>" name="name">
+            <input class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-5 col-sm-offset-2 col-xs-12" type="email" placeholder="<?php echo $this->lang->line('your_email');?>" name="email">
+            <input class="col-lg-12 col-md-12 col-sm-12 col-xs-12" type="text" placeholder="<?php echo $this->lang->line('your_title');?>" name="title">
+            <textarea class="col-lg-12 col-md-12 col-sm-12 col-xs-12" placeholder="<?php echo $this->lang->line('your_comment');?>" name="message"></textarea>
 
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
-              <input type="submit" value="send message" id="contact_form_submit">
+              <input type="submit" value="<?php echo $this->lang->line('send_message');?>" id="contact_form_submit">
               <span id="message_area"></span>
             </div>
           </form>

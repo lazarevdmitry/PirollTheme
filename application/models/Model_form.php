@@ -11,8 +11,14 @@ class Model_form extends CI_Model{
     $title=html_escape($data['title']);
     $message=html_escape($data['message']);
 
-    $query_str="INSERT INTO Submissions (name,email,title,message,date) VALUES ('$name','$email','$title','$message',datetime('now'));";
-    $query=$this->db->query($query_str);
-
+    $input_array=array(
+      "name"=>$name,
+      "email"=>$email,
+      "title"=>$title,
+      "message"=>$message,
+      "date"=>date('now')
+    );
+    $str=$this->db->insert_string("Submissions",$input_array);
+    $query=$this->db->query($str);
   }
 }
