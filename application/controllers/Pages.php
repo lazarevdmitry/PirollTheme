@@ -1,7 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Pages extends CI_Controller {
+class Pages extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -51,11 +52,13 @@ class Pages extends CI_Controller {
 		$data['site_info']=$this->_get_info();
 		$this->load->model('model_info');
 		$data['contact_info']=$this->model_info->get_contact_info();
+		
 		$this->load->view('templates/header',$data); // loading heading part of index page
 		$this->load->view('pages/contact');
     $this->load->view('templates/footer'); // loading footing part of index page
 	}
-	public function post_form_data(){
+	public function post_form_data()
+	{
 		$data["name"]=$this->input->post("name");
 		$data["email"]=$this->input->post("email");
 		$data["title"]=$this->input->post("title");
@@ -65,7 +68,8 @@ class Pages extends CI_Controller {
 		$this->load->model('model_form');
 		$this->model_form->set_form_data($data);
 	}
-	public function show_404(){
+	public function show_404()
+	{
 		show_404();
 	}
 }

@@ -7,16 +7,16 @@
           <p><?php echo $this->lang->line('contact_info_description');?></p>
           <div itemscope itemtype="http://schema.org/Organization">
             <div class="contact-address">
-              <?php echo $this->lang->line('contact_address');?><span itemprop="postalCode">10111</span><span itemprop="address">Santa Monica Boulevard, LA</span>
+              <?php echo $this->lang->line('contact_address');?><span itemprop="postalCode"></span><span itemprop="address"><?php echo $contact_info['Address'];?></span>
             </div>
             <div class="contact-phone">
-              <?php echo $this->lang->line('contact_phone');?> <span itemprop="telephone">+44 987 065 908</span>
+              <?php echo $this->lang->line('contact_phone');?> <span itemprop="telephone"><?php echo $contact_info['Phone']; ?></span>
             </div>
             <div class="contact-email">
-              <?php echo $this->lang->line('contact_email');?> <span itemprop="email">info@example.com</span>
+              <?php echo $this->lang->line('contact_email');?> <span itemprop="email"><?php echo $contact_info['Email']; ?></span>
             </div>
             <div class="contact-fax">
-              <?php echo $this->lang->line('contact_fax');?> <span itemprop="fax">+44 987 065 909</span>
+              <?php echo $this->lang->line('contact_fax');?> <span itemprop="fax"><?php echo $contact_info['Fax']; ?></span>
             </div>
           </div>
         </div>

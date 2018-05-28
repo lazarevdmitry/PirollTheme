@@ -17,7 +17,8 @@ INSERT INTO Information
   (8,'OwnerNameBrief','Piroll'),
   (9,'OwnerNameFull','Piroll Design, Inc.');
 
-CREATE TABLE Projects (
+CREATE TABLE Projects
+(
   id integer not null primary key,
   name varchar(50) not null,
   image varchar(250) not null,
@@ -31,6 +32,17 @@ CREATE TABLE Projects (
 INSERT INTO Projects
   (id,name,image,header,content,clientName,clientDate,share)
   values
+
+  (
+    1,
+    'Project #1',
+    'project1.png',
+    'Project #1',
+    "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
+    "Emma Morris",
+    "2017-06-25",
+    "Facebook, Twitter, Pinterest"
+  ),
   (
     2,
     'Project #2',
@@ -38,7 +50,7 @@ INSERT INTO Projects
     'Project #2',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -48,7 +60,7 @@ INSERT INTO Projects
     'Project #3',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -58,7 +70,7 @@ INSERT INTO Projects
     'Project #4',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -68,7 +80,7 @@ INSERT INTO Projects
     'Project #5',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -78,7 +90,7 @@ INSERT INTO Projects
     'Project #6',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -88,7 +100,7 @@ INSERT INTO Projects
     'Project #7',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -98,7 +110,7 @@ INSERT INTO Projects
     'Project #8',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -108,7 +120,7 @@ INSERT INTO Projects
     'Project #9',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -118,7 +130,7 @@ INSERT INTO Projects
     'Project #10',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -128,7 +140,7 @@ INSERT INTO Projects
     'Project #11',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   ),
   (
@@ -138,7 +150,7 @@ INSERT INTO Projects
     'Project #12',
     "<p>Light his can't a creeping. Be, being blessed night. Replenish blessed creature good. Saw earth every creepeth lights day, divided abundantly form. In. Said given lights. Sixth the male. Upon their multiply. Kind beast. Him tree upon.</p><p>Cattle. Dominion day herb she'd creeping divide darkness. Which. Subdue had.</p>",
     "Emma Morris",
-    "25.06.2017",
+    "2017-06-25",
     "Facebook, Twitter, Pinterest"
   );
 
@@ -160,3 +172,15 @@ CREATE TABLE Submissions
   message text not null,
   date datetime not null
 );
+
+CREATE TABLE Users
+(
+  name varchar(100) not null,
+  password varchar(100) not null,
+  expires datetime not null
+);
+
+INSERT INTO Users
+(name,password,expires)
+values
+("test","test","01-01-2019 00:00");

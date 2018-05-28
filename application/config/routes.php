@@ -53,7 +53,17 @@ $route['default_controller'] = 'pages/index';
 $route['about'] = 'pages/show_about';
 $route['contact'] = 'pages/show_contact';
 $route['form'] = 'pages/post_form_data';
+//$route['projects/delete/(:any)'] = 'projects/delete_project/$1';
 $route['projects/(:any)'] = 'projects/show_project_page/$1';
+
+$route['admin'] = 'admin/index';
+$route['admin/login'] = 'admin/input_login_info';
+$route['admin/info'] = 'admin/show_info_page';
+$route['admin/projects'] = 'admin/show_projects_page';
+$route['admin/new_project'] = 'admin/show_new_project_page';
+$route['admin/logout'] = 'admin/logout_page';
+$route['admin/(:any)'] = 'admin/show_admin_page/$1';
+
 $route['(:any)'] = 'pages/show_404';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

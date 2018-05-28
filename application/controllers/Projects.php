@@ -22,11 +22,16 @@ class Projects extends CI_Controller {
 	{
 
 	}
+	public function __construct(){
+		parent::__construct();
+		$this->load->model('model_info');
+	}
+	
   public function show_project_page($product_num){
     $data['title']="Project {$product_num}";
 
 		// retrives site info and pushes it to the view
-    $this->load->model('model_info');
+
 		$data['site_info']=$this->model_info->get_site_info();
     $this->load->view('templates/header',$data);
 

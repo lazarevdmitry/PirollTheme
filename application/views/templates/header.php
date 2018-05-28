@@ -14,8 +14,7 @@
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/html5shiv.min.js"></script>
-    <script src="/js/html5shiv-printshiv.min.js"></script>
+    
   </head>
   <body>
     <div class="wrapper">

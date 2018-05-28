@@ -13,7 +13,8 @@
           <?php echo $this->lang->line('designed_by');?> <?php echo $dat['DesignedBy']; ?>.
         </div>
         <div itemprop="programmer">
-          <?php echo $this->lang->line('implemented_by');?> <?php echo $dat['ImplementedBy']; ?>.
+          <?php echo $this->lang->line('implemented_by');?>
+          <a href="mailto:lazarevdmitry2008@gmail.com"><?php echo $dat['ImplementedBy']; ?>.</a>
         </div>
       </li> <!-- End of li -->
       <li class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-4 col-xs-6">
@@ -86,9 +87,8 @@
   </div> <!-- End of .footer-container -->
 </footer>
 </div> <!-- End of .wrapper  -->
-
-    <script src="/vendor/html5shiv.min.js"></script>
-    <script src="/vendor/html5shiv-printshiv.min.js"></script>
+<script src="/js/html5shiv.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
     <!-- Yandex.Metrika counter -->
     <script>
         (function (d, w, c) {

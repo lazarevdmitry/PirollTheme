@@ -5,13 +5,13 @@
         <h1><?php echo $project_data['header']; ?></h1>
         <?php echo $project_data['content']; ?>
         <div class="client-name">
-          <?php echo $this->lang->line('client_name');?> <span itemprop="name"><?php echo $project_data['clientName']; ?></span>
+          <?php echo $this->lang->line('client_name');?>: <span itemprop="name"><?php echo $project_data['clientName']; ?></span>
         </div>
         <div class="client-date">
-          <?php echo $this->lang->line('project_date');?> <span><?php echo $project_data['clientDate']; ?></span>
+          <?php echo $this->lang->line('project_date');?>: <span><?php echo $project_data['clientDate']; ?></span>
         </div>
         <div class="client-share">
-          <?php echo $this->lang->line('project_share');?> <span><?php echo $project_data['share']; ?></span>
+          <?php echo $this->lang->line('project_share');?>: <span><?php echo $project_data['share']; ?></span>
         </div>
       </div>
       <div class="project_photo col-lg-6 col-md-6 col-sm-4 col-xs-12">

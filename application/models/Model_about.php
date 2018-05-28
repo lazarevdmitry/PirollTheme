@@ -6,9 +6,19 @@ class Model_about extends CI_Model{
     $this->load->database();
   }
   public function get_about_page_info(){
-    $query_str="SELECT * FROM Information WHERE name='NameHeader' OR name='NameSubheader' OR name='ProjectsAmount' OR name='WorkingHoursAmount' OR name='PositiveFeedbacksAmount' OR name='HappyClientsAmount';";
-
-    $query=$this->db->query($query_str);
+    $this->db->select("*");
+    $this->db->from("Information");
+    $this->db->or_where(
+      array(
+        "name"=>"NameHeader",
+        "name"=>"NameSubheader",
+        "name"=>"ProjectsAmount",
+        "name"=>"WorkingHoursAmount",
+        "name"=>"PositiveFeedbacksAmount",
+        "name"=>"HappyClientsAmount",
+      )
+    );
+    $query=$this->db->get();
     $temp=$query->result_array();
     $result=array();
     foreach($temp as $row){

@@ -42,8 +42,18 @@ $lang['your_title'] = 'Заголовок сообщения: ';
 $lang['your_comment'] = 'Текст Вашего сообщения: ';
 $lang['send_message'] = 'Отправить сообщение';
 
-$lang['client_name'] = 'Клиент: ';
-$lang['project_date'] = 'Дата: ';
-$lang['project_share'] = 'Поделиться: ';
+$lang['client_name'] = 'Клиент';
+$lang['project_date'] = 'Дата';
+$lang['project_share'] = 'Поделиться';
 $lang['prev_project'] = 'Предыдущий проект';
 $lang['next_project'] = 'Следующий проект';
+// Admin pages
+// Projects page
+$lang['project_name'] = 'Название проекта';
+$lang['project_image'] = 'Прикрепленное изображение';
+$lang['project_header'] = 'Загловок проекта';
+$lang['project_content'] = 'Описание проекта';
+
+$lang['save_project'] = 'Сохранить проект';
+$lang['delete_project'] = 'Удалить проект';
+$lang['new_project'] = 'Создать новый проект';

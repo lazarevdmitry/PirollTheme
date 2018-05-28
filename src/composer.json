@@ -13,7 +13,8 @@
 	"require": {
 		"php": ">=5.3.7",
 		"twitter/bootstrap": "^4.1",
-		"components/jquery": "^3.3"
+		"components/jquery": "^3.3",
+		"components/jqueryui": "^1.12"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
