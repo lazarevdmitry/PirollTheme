@@ -52,10 +52,23 @@ class Pages extends CI_Controller
 		$data['site_info']=$this->_get_info();
 		$this->load->model('model_info');
 		$data['contact_info']=$this->model_info->get_contact_info();
-		
+
 		$this->load->view('templates/header',$data); // loading heading part of index page
 		$this->load->view('pages/contact');
     $this->load->view('templates/footer'); // loading footing part of index page
+	}
+	public function show_projects(){
+		$data['title']='Projects page';
+
+		$data['site_info']=$this->_get_info();
+
+		$this->load->view('templates/header',$data); // loading heading part of index page
+
+		$this->load->model('model_projects');
+		$data['projects_list']=$this->model_projects->get_projects();
+
+		$this->load->view('pages/projects',$data);
+    $this->load->view('templates/footer',$data); // loading footing part of index page
 	}
 	public function post_form_data()
 	{

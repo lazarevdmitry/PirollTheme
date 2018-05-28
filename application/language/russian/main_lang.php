@@ -29,17 +29,17 @@ $lang['need_a_project'] = 'Нужен проект?';
 $lang['let_us_know'] = 'Дайте нам знать, что Вы ищете в нашем агентстве.';
 $lang['lets_talk'] = 'Давайте пообщаемся';
 
-$lang['contact_info'] = 'Контактные данные:';
+$lang['contact_info'] = 'Контактные данные';
 $lang['contact_info_description'] = 'Какой-то текст';
-$lang['contact_address'] = 'Адрес: ';
-$lang['contact_phone'] = 'Телефон: ';
-$lang['contact_email'] = 'E-mail: ';
-$lang['contact_fax'] = 'Факс: ';
+$lang['contact_address'] = 'Адрес';
+$lang['contact_phone'] = 'Телефон';
+$lang['contact_email'] = 'E-mail';
+$lang['contact_fax'] = 'Факс';
 
-$lang['your_name'] = 'Ваше имя: ';
-$lang['your_email'] = 'Ваш e-mail: ';
-$lang['your_title'] = 'Заголовок сообщения: ';
-$lang['your_comment'] = 'Текст Вашего сообщения: ';
+$lang['your_name'] = 'Ваше имя';
+$lang['your_email'] = 'Ваш e-mail';
+$lang['your_title'] = 'Заголовок сообщения';
+$lang['your_comment'] = 'Текст Вашего сообщения';
 $lang['send_message'] = 'Отправить сообщение';
 
 $lang['client_name'] = 'Клиент';
@@ -51,7 +51,7 @@ $lang['next_project'] = 'Следующий проект';
 // Projects page
 $lang['project_name'] = 'Название проекта';
 $lang['project_image'] = 'Прикрепленное изображение';
-$lang['project_header'] = 'Загловок проекта';
+$lang['project_header'] = 'Заголовок проекта';
 $lang['project_content'] = 'Описание проекта';
 
 $lang['save_project'] = 'Сохранить проект';
