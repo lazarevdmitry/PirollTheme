@@ -8,16 +8,16 @@ class Model_about extends CI_Model{
   public function get_about_page_info(){
     $this->db->select("*");
     $this->db->from("Information");
-    $this->db->or_where(
-      array(
-        "name"=>"NameHeader",
-        "name"=>"NameSubheader",
-        "name"=>"ProjectsAmount",
-        "name"=>"WorkingHoursAmount",
-        "name"=>"PositiveFeedbacksAmount",
-        "name"=>"HappyClientsAmount",
-      )
-    );
+    $this->db->or_where("name","NameHeader");
+    $this->db->or_where("name","NameSubheader");
+    $this->db->or_where("name","ProjectsAmount");
+    $this->db->or_where("name","WorkingHoursAmount");
+    $this->db->or_where("name","PositiveFeedbacksAmount");
+    $this->db->or_where("name","HappyClientsAmount");
+    $this->db->or_where("name","AboutHeader");
+    $this->db->or_where("name","AboutDescription");
+
+
     $query=$this->db->get();
     $temp=$query->result_array();
     $result=array();
@@ -27,4 +27,5 @@ class Model_about extends CI_Model{
 
     return $result;
   }
+
 }

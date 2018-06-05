@@ -1,8 +1,8 @@
 
     <main>
       <section class="section0">
-        <h1>UI/UX &amp; Graphic Designer</h1>
-        <p>I am a Graphic &amp; Web Designer based in New York, <br><span>specializing in User Interface Design and Development.</span></p>
+        <h1><?php echo $home_block['HomeHeader']; ?></h1>
+        <p><?php echo $home_block['HomeDescription']; ?></p>
       </section>
       <section class="tiles-list">
           <?php for ($i=0;$i<count($projects_list);$i++)

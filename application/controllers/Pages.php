@@ -23,11 +23,22 @@ class Pages extends CI_Controller
 	{
 		$data['title']='Home page';
 		$data['site_info']=$this->_get_info();
+		$data['home_block']=$this->_get_home_block_info();
 		$this->load->view('templates/header',$data); // loading heading part of index page
 		$this->load->model('model_projects');
 		$data['projects_list']=$this->model_projects->get_projects();
 		$this->load->view('pages/home',$data);
     $this->load->view('templates/footer',$data); // loading footing part of index page
+		log_write("Pages/index");
+	}
+	public function __construct(){
+		parent::__construct();
+		$this->load->helper("my_log");
+	}
+	private function _get_home_block_info()
+	{
+		$this->load->model('model_info');
+		return $this->model_info->get_home_block_info();
 	}
 	private function _get_info()
 	{
@@ -41,10 +52,12 @@ class Pages extends CI_Controller
 		$this->load->model('model_about');
 		$data['about_data']=$this->model_about->get_about_page_info();
 
+
 		$this->load->view('templates/header',$data); // loading heading part of index page
 
 		$this->load->view('pages/about',$data);
     $this->load->view('templates/footer',$data); // loading footing part of index page
+		log_write("Pages/about");
 	}
 	public function show_contact()
 	{
@@ -56,8 +69,10 @@ class Pages extends CI_Controller
 		$this->load->view('templates/header',$data); // loading heading part of index page
 		$this->load->view('pages/contact');
     $this->load->view('templates/footer'); // loading footing part of index page
+		log_write("Pages/contact");
 	}
-	public function show_projects(){
+	public function show_projects()
+	{
 		$data['title']='Projects page';
 
 		$data['site_info']=$this->_get_info();
@@ -69,6 +84,7 @@ class Pages extends CI_Controller
 
 		$this->load->view('pages/projects',$data);
     $this->load->view('templates/footer',$data); // loading footing part of index page
+		log_write("Pages/projects");
 	}
 	public function post_form_data()
 	{
@@ -80,6 +96,8 @@ class Pages extends CI_Controller
 
 		$this->load->model('model_form');
 		$this->model_form->set_form_data($data);
+		log_write("Sending form data: name={$data['name']},\n\temail={$data['email']},\n\ttitle={$data['title']},\n\tmessage={$data['message']}");
+		$this->show_contact();
 	}
 	public function show_404()
 	{

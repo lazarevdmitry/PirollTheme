@@ -26,8 +26,9 @@ class Projects extends CI_Controller {
 		parent::__construct();
 		$this->load->model('model_info');
 	}
-	
-  public function show_project_page($product_num){
+
+  public function show_project_page($product_num)
+	{
     $data['title']="Project {$product_num}";
 
 		// retrives site info and pushes it to the view

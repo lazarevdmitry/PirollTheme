@@ -9,7 +9,6 @@ class Model_info extends CI_Model{
   }
   private function _send_query($str)
   {
-
     $query=$this->db->query($str);
     return $this->_parse_query($query);
   }
@@ -26,63 +25,66 @@ class Model_info extends CI_Model{
   }
   public function get_contact_info()
   {
-
-    $query_str="
-      SELECT name, value
-        FROM Information
-        WHERE
-          name='Address' OR
-          name='Phone' OR
-          name='Email' OR
-          name='Fax';
-    ";
-    return $this->_send_query($query_str);
-    /*
     $this->db->select("name,value");
     $this->db->from("Information");
-    $this->db->where("name","Address");
-    $this->db->where("name","Phone");
-    $this->db->where("name","Email");
-    $this->db->where("name","Fax");
-
-    $result=$this->db->send();
-
-    return $this->_parse_query($result);
-    */
-
-  }
-  public function get_site_info()
-  {
-    $query_str="
-      SELECT name, value
-        FROM Information
-        WHERE
-          name='Year' OR
-          name='DesignedBy' OR
-          name='ImplementedBy' OR
-          name='Email' OR
-          name='Phone' OR
-          name='OwnerNameFull' OR
-          name='OwnerNameBrief';
-    ";
-    return $this->_send_query($query_str);
-    /*
-    $this->db->select("name,value");
-    $this->db->from("Information");
-    $this->db->or_where(
-      array(
-        "name"=>"Year",
-        "name"=>"DesignedBy",
-        "name"=>"ImplementedBy",
-        "name"=>"Email",
-        "name"=>"Phone",
-        "name"=>"OwnerNameFull",
-        "name"=>"OwnerNameBrief"
-      )
-    );
+    $this->db->or_where("name","Address");
+    $this->db->or_where("name","Phone");
+    $this->db->or_where("name","Email");
+    $this->db->or_where("name","Fax");
     $result=$this->db->get();
 
     return $this->_parse_query($result);
-    */
+  }
+  public function update_home_info($header,$description)
+  {
+    $data=array(
+      "value"=>$header
+    );
+    $this->db->where("name","HomeHeader");
+    $this->db->update("Information",$data);
+    $data=array(
+      "value"=>$description
+    );
+    $this->db->where("name","HomeDescription");
+    $this->db->update("Information",$data);
+  }
+  public function update_about_info($header,$description)
+  {
+    $data=array(
+      "value"=>$header
+    );
+    $this->db->where("name","AboutHeader");
+    $this->db->update("Information",$data);
+    $data=array(
+      "value"=>$description
+    );
+    $this->db->where("name","AboutDescription");
+    $this->db->update("Information",$data);
+  }
+  public function get_home_block_info()
+  {
+    $this->db->select("name,value");
+    $this->db->from("Information");
+    $this->db->or_where("name","HomeHeader");
+    $this->db->or_where("name","HomeDescription");
+    $result=$this->db->get();
+
+    return $this->_parse_query($result);
+  }
+  
+  public function get_site_info()
+  {
+    $this->db->select("name,value");
+    $this->db->from("Information");
+    $this->db->or_where("name","Year");
+    $this->db->or_where("name","DesignedBy");
+    $this->db->or_where("name","Email");
+    $this->db->or_where("name","Phone");
+    $this->db->or_where("name","OwnerNameFull");
+    $this->db->or_where("name","OwnerNameBrief");
+    $this->db->or_where("name","ImplementedBy");
+    $result=$this->db->get();
+
+    return $this->_parse_query($result);
   }
 }

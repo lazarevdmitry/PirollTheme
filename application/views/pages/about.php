@@ -49,9 +49,8 @@
       <section class="about-me">
         <div class="container">
           <div class="about-me-container col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 col-sm-12 col-xs-12">
-            <h2>About me</h2>
-            <p>Given let waters air sea had you'll, may seed abundatly fish. Were, you'll earth forth winged above brought. Own darkness they're him can't fourth sea place have.</p>
-            <p>So the above May stars cattle fruitful face shall. Tree it, winged. Every signs male firmament us. Morning him.</p>
+            <h2><?php echo $about_data['AboutHeader']; ?></h2>
+            <?php echo $about_data['AboutDescription']; ?>
             <p> <img src="/img/sign.png" alt="Amelia Woods sign"></p>
           </div>
         </div>

@@ -1,0 +1,38 @@
+
+@media (max-width: 768px) {
+  header {
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+  }
+  nav li {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    border-bottom: 1px solid #787878 !important;
+  }
+  nav li a {
+    display: inline-block !important;
+  }
+  .section0 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+  .section_bar {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+  .tiles-list ul li:nth-child(2n+1) {
+    background-color: #888 !important;
+  }
+  .tiles-list ul li:nth-child(2n) {
+    background-color: #e1e1e1 !important;
+  }
+  .review-form .row {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  footer {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+}

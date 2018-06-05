@@ -22,9 +22,11 @@ class Model_admin extends CI_Model{
     return FALSE;
   }
   public function check_user($login,$pass){
-    $query_str="SELECT COUNT(*) AS amount FROM Users WHERE name='$login' AND password='$pass';";
+    $l=$this->db->escape($login);
+    $p=$this->db->escape($pass);
+    $query_str="SELECT COUNT(*) AS amount FROM Users WHERE name={$l} AND password={$p};";
     $query=$this->db->query($query_str);
-    
+
     if ($query->row_array()["amount"]>0){
       return TRUE;
     } else {

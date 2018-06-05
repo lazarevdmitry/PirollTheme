@@ -60,9 +60,12 @@ $route['projects/(:any)'] = 'projects/show_project_page/$1';
 $route['admin'] = 'admin/index';
 $route['admin/login'] = 'admin/input_login_info';
 $route['admin/info'] = 'admin/show_info_page';
+$route['admin/home'] = 'admin/show_home_page';
+$route['admin/about'] = 'admin/show_about_page';
 $route['admin/projects'] = 'admin/show_projects_page';
 $route['admin/new_project'] = 'admin/show_new_project_page';
 $route['admin/logout'] = 'admin/logout_page';
+$route['admin/submissions'] = 'admin/show_submissions_page';
 $route['admin/(:any)'] = 'admin/show_admin_page/$1';
 
 $route['(:any)'] = 'pages/show_404';

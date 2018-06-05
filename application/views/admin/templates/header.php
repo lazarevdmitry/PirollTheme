@@ -12,7 +12,7 @@
     <meta property="og:image" content="/img/logo.png">
     <meta property="og:url" content="">
     <title><?php echo $title; ?></title>
+    <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css" >
     <link rel="stylesheet" href="/css/style.css">
-
   </head>
   <body>

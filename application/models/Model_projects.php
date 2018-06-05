@@ -15,6 +15,7 @@ class Model_projects extends CI_Model
       "id"=>$id,
       "name"=>$name,
       "image"=>$image,
+      "header"=>$header,
       "content"=>$content,
       "clientName"=>$cname,
       "clientDate"=>$cdate,
@@ -32,16 +33,15 @@ class Model_projects extends CI_Model
       'clientName'=>$cname,
       'clientDate'=>$cdate,
     );
-    $where="id={$id}";
     $this->db->where("id",$id);
     $this->db->update("Projects",$d);
-
   }
   public function delete_project($index)
   {
     $this->db->delete("Projects",array("id"=>$index));
   }
-  public function get_projects_amount(){
+  public function get_projects_amount()
+  {
     return $this->db->count_all("Projects");
   }
   public function get_projects()

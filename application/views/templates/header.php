@@ -12,9 +12,10 @@
     <meta property="og:image" content="/img/logo.png">
     <meta property="og:url" content="">
     <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
-    
+    <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css" >
+    <link rel="stylesheet" href="/css/style.min.css?v=<?php echo date('d.m.Y');?>">
+    <link rel="stylesheet" href="/css/style-768px.min.css?v=<?php echo date('d.m.Y');?>" media="(max-width:768px)">
+
   </head>
   <body>
     <div class="wrapper">

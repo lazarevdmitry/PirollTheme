@@ -21,75 +21,70 @@ li {
 html {
   background: none;
 }
-html body {
+body {
   font-family: Roboto, sans-serif;
 }
-html body .wrapper {
+.wrapper {
   background-color: white;
 }
-html body .wrapper header {
+.wrapper header {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-html body .wrapper header .logo img {
+.logo img {
   width: 31px;
   height: 25px;
 }
-html body .wrapper header nav ul .menuitem a {
+.menuitem a {
   color: black;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
-html body .wrapper header nav ul .menuitem a:hover {
+.menuitem a:hover {
   color: #10c9c3;
   text-decoration: none;
 }
-html body .wrapper main .section0 {
+.section0 {
   background-color: #eee;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-html body .wrapper main .section0 > * {
+.section0 > * {
   text-align: center;
 }
-html body .wrapper main .section0 h1 {
+.section0 h1 {
   color: black;
   font-weight: 700;
   margin-bottom: 30px;
 }
-html body .wrapper main .section0 p {
+.section0 p {
   color: #787878;
 }
-html body .wrapper main .tiles-list ul:nth-child(2n+1) li:nth-child(2n+1) {
+.tiles-list ul:nth-child(2n+1) li:nth-child(2n+1),
+.tiles-list ul:nth-child(2n) li:nth-child(2n) {
   background-color: #888;
 }
-html body .wrapper main .tiles-list ul:nth-child(2n+1) li:nth-child(2n) {
+.tiles-list ul:nth-child(2n+1) li:nth-child(2n),
+.tiles-list ul:nth-child(2n) li:nth-child(2n+1) {
   background-color: #e1e1e1;
 }
-html body .wrapper main .tiles-list ul:nth-child(2n) li:nth-child(2n) {
-  background-color: #888;
-}
-html body .wrapper main .tiles-list ul:nth-child(2n) li:nth-child(2n+1) {
-  background-color: #e1e1e1;
-}
-html body .wrapper main .tiles-list ul {
+.tiles-list ul {
   padding-left: 0;
   margin-bottom: 0;
   background-color: #10c9c3;
 }
-html body .wrapper main .tiles-list ul li {
+.tiles-list ul li {
   height: 300px;
 }
-html body .wrapper main .tiles-list ul li a {
-  /* display: inline-block;*/
+.tiles-list ul li a {
   width: 100%;
   height: 100%;
 }
-html body .wrapper main .tiles-list ul li:hover {
+.tiles-list ul li:hover {
   opacity: 0;
 }
-html body .wrapper main .tiles-list ul li:hover a {
+.tiles-list ul li:hover a {
   background-image: url(img/look.png);
 }
 .tile a {
@@ -101,7 +96,7 @@ html body .wrapper main .tiles-list ul li:hover a {
   max-width: 70%;
   max-height: 70%;
 }
-html body .wrapper main .section_bar {
+.section_bar {
   background-color: #10c9c3;
   color: white;
   filter: contrast(1.2);
@@ -109,49 +104,49 @@ html body .wrapper main .section_bar {
   padding-bottom: 100px;
 }
 
-html body .wrapper main .section_bar .container ul li img {
+.section_bar .container ul li img {
   float: left;
   width: 40px;
   height: auto;
   filter: drop-shadow(0 0 1px white);
 }
-html body .wrapper main .section_bar .container ul li div {
+.section_bar .container ul li div {
   margin-left: 60px;
   text-transform: uppercase;
 }
-html body .wrapper main .about-me {
+.about-me {
   background-color: #e1e1e1;
 }
-html body .wrapper main .about-me .about-me-container {
+.about-me-container {
   background-color: #eee;
   padding: 135px 85px 135px 85px;
 }
-html body .wrapper main .about-me .about-me-container h2 {
+.about-me-container h2 {
   color: black;
   margin-bottom: 17px;
 }
-html body .wrapper main .about-me .about-me-container p {
+.about-me-container p {
   color: #787878;
 }
-html body .wrapper main .about-me .about-me-container p img {
+.about-me-container p img {
   margin-top: 40px;
 }
-html body .wrapper main .need-a-project {
+.need-a-project {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-html body .wrapper main .need-a-project h2 {
+.need-a-project h2 {
   color: black;
   text-align: center;
 }
-html body .wrapper main .need-a-project p {
+.need-a-project p {
   margin-top: 30px;
   margin-bottom: 30px;
   color: #787878;
   text-align: center;
   line-height: 1.5em;
 }
-html body .wrapper main .need-a-project .nap-button {
+.nap-button {
   text-align: center;
   background-color: #10c9c3;
   color: white;
@@ -160,99 +155,99 @@ html body .wrapper main .need-a-project .nap-button {
   padding-bottom: 17px;
   text-transform: uppercase;
 }
-html body .wrapper main .single-section {
+.single-section {
   background-color: #e1e1e1;
 }
-html body .wrapper main .single-section h1 {
+.single-section h1 {
   font-weight: 700;
   margin-bottom: 20px;
 }
-html body .wrapper main .single-section p {
+.single-section p {
   color: #787878;
   font-weight: normal;
   margin-bottom: 30px;
 }
-html body .wrapper main .single-section > div {
+.single-section > div {
   color: black;
   font-weight: 700;
 }
-html body .wrapper main .single-section > div span {
+.single-section > div span {
   color: #787878;
   font-weight: normal;
 }
 .single-section>.row{
   display:flex;
 }
-html body .wrapper main .single-section .row > div {
+.single-section .row > div {
   background-color: #eee;
   padding: 105px 100px 105px 100px;
 }
-html body .wrapper main .pages-navigation {
+.pages-navigation {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-html body .wrapper main .pages-navigation > * {
+.pages-navigation > * {
   font-weight: 700;
   letter-spacing: 0.3em;
   font-size: 0.8em;
   text-transform: uppercase;
 }
-html body .wrapper main .pages-navigation > * a {
+.pages-navigation > * a {
   color: black;
 }
-html body .wrapper main .pages-navigation > * a:hover {
+.pages-navigation > * a:hover {
   text-decoration: none;
 }
-html body .wrapper main .pages-navigation .prev:before {
+.prev:before {
   content: "<  ";
 }
-html body .wrapper main .pages-navigation .prev {
+.prev {
   text-align: left;
 }
-html body .wrapper main .pages-navigation .next {
+.next {
   text-align: right;
 }
-html body .wrapper main .pages-navigation .center {
+.center {
   text-align: center;
 }
-html body .wrapper main .pages-navigation .center a {
+.center a {
   display: inline-block;
   width: 20px;
   height: 20px;
   background-image: url(../img/ogl.png);
   vertical-align: top;
 }
-html body .wrapper main .pages-navigation .next:after {
+.next:after {
   content: "  >";
 }
-html body .wrapper main .info {
+.info {
   background-color: #eee;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-html body .wrapper main .info .container .row > div {
+.info .container .row > div {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-html body .wrapper main .info .container .row .contact-info h1 {
+.contact-info h1 {
   margin-top: 10px;
   padding-top: 0;
   color: black;
 }
-html body .wrapper main .info .container .row .contact-info p {
+.contact-info p {
   color: #787878;
 }
-html body .wrapper main .info .container .row .contact-info div > div {
+.contact-info div > div {
   color: black;
 }
-html body .wrapper main .info .container .row .contact-info div > div span {
+.contact-info div > div span {
   color: #787878;
 }
-html body .wrapper main .info .container .row .review-form input,
-html body .wrapper main .info .container .row .review-form textarea {
+.review-form input,
+.review-form textarea {
   margin-top: 10px;
 }
-html body .wrapper main .info .container .row .review-form input[type="submit"] {
+.review-form input[type="submit"] {
   background-color: #10c9c3;
   color: white;
   font-size: 0.8em;
@@ -262,20 +257,20 @@ html body .wrapper main .info .container .row .review-form input[type="submit"] 
   padding-bottom: 10px;
   text-transform: uppercase;
 }
-html body .wrapper footer {
+footer {
   background-color: black;
   color: #e1e1e1;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-html body .wrapper footer .footer-container ul li div {
+.footer-container ul li div {
   margin-bottom: 0.8em;
 }
-html body .wrapper footer .footer-container ul li div a {
+.footer-container ul li div a {
   color: #e1e1e1;
   text-transform: capitalize;
 }
-html body .wrapper footer .footer-container ul li div a:hover {
+.footer-container ul li div a:hover {
   color: white;
   text-decoration: none;
 }
@@ -287,41 +282,4 @@ html body .wrapper footer .footer-container ul li div a:hover {
 }
 .project_photo img{
   max-width: 70%;
-}
-@media all and (max-width: 768px) {
-  header {
-    padding-bottom: 20px !important;
-    padding-top: 20px !important;
-  }
-  nav li {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    border-bottom: 1px solid #787878 !important;
-  }
-  nav li a {
-    display: inline-block !important;
-  }
-  .section0 {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
-  }
-  .section_bar {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
-  }
-  .tiles-list ul li:nth-child(2n+1) {
-    background-color: #888 !important;
-  }
-  .tiles-list ul li:nth-child(2n) {
-    background-color: #e1e1e1 !important;
-  }
-  .review-form .row {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-  footer {
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
-  }
-
 }

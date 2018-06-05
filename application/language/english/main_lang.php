@@ -48,6 +48,21 @@ $lang['project_share'] = 'Share';
 $lang['prev_project'] = 'Previous project';
 $lang['next_project'] = 'Next project';
 // Admin pages
+$lang['login_name'] = 'Login';
+$lang['password'] = 'Password';
+$lang['show_site'] = 'Show site';
+$lang['logout'] = 'Logout';
+$lang['submit'] = 'Send';
+
+$lang['main_page_info'] = 'Main information';
+$lang['home_page_info'] = 'Home page';
+$lang['projects_page_info'] = 'Projects page';
+$lang['about_page_info'] = 'About site page';
+$lang['messages_page_info'] = 'Submissions page';
+// Main info page
+$lang['year'] = 'Current year';
+$lang['owner_full_name'] = "Full owner's name";
+$lang['owner_brief_name'] = "Brief owner's name";
 // Projects page
 $lang['project_name'] = 'Project name';
 $lang['project_image'] = 'Attached image';
@@ -57,3 +72,12 @@ $lang['project_content'] = 'Project description';
 $lang['save_project'] = 'Save project';
 $lang['delete_project'] = 'Delete project';
 $lang['new_project'] = 'Create a new project';
+// Home page
+$lang['home_header'] = 'Home page header';
+$lang['home_description'] = 'Description';
+// About page
+$lang['about_header'] = 'About page header';
+$lang['about_description'] = 'Description';
+// Messages page
+$lang['message_title'] = "Submission's title";
+$lang['message_text'] = "Submission's text";

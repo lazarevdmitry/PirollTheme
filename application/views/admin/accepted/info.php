@@ -2,33 +2,33 @@
   <form action="/admin/info" method="post">
     <ul class="list-group">
       <li class="list-group-item">
-        Address: <input type="text" value="<?php echo $contacts['Address']; ?>"/><br />
+        <?php echo $this->lang->line('contact_address'); ?>: <input type="text" value="<?php echo $contacts['Address']; ?>"/><br />
       </li>
       <li class="list-group-item">
-        Phone: <input type="text" value="<?php echo $contacts['Phone']; ?>" /><br />
+        <?php echo $this->lang->line('contact_phone'); ?>: <input type="text" value="<?php echo $contacts['Phone']; ?>" /><br />
       </li>
       <li class="list-group-item">
-        Email: <input type="text" value="<?php echo $contacts['Email']; ?>" /><br />
+        <?php echo $this->lang->line('contact_email'); ?>: <input type="text" value="<?php echo $contacts['Email']; ?>" /><br />
       </li>
       <li class="list-group-item">
-        Fax: <input type="text" value="<?php echo $contacts['Fax']; ?>" /><br />
+        <?php echo $this->lang->line('contact_fax'); ?>: <input type="text" value="<?php echo $contacts['Fax']; ?>" /><br />
       </li>
       <li class="list-group-item">
-        Year: <input type="text" value="<?php echo $site_info['Year']; ?>" /><br />
+        <?php echo $this->lang->line('year'); ?>: <input type="text" value="<?php echo $site_info['Year']; ?>" /><br />
       </li>
       <li class="list-group-item">
-        Designed By: <input type="text" value="<?php echo $site_info['DesignedBy']; ?>" /><br />
+        <?php echo $this->lang->line('designed_by'); ?>: <input type="text" value="<?php echo $site_info['DesignedBy']; ?>" /><br />
       </li>
       <li class="list-group-item">
-        Implemented By: <input type="text" value="<?php echo $site_info['ImplementedBy']; ?>" /><br />
+        <?php echo $this->lang->line('implemented_by'); ?>: <input type="text" value="<?php echo $site_info['ImplementedBy']; ?>" /><br />
       </li>
       <li class="list-group-item">
-        Owner's Name Full: <input type="text" value="<?php echo $site_info['OwnerNameFull']; ?>" /><br />
+        <?php echo $this->lang->line('owner_full_name'); ?>: <input type="text" value="<?php echo $site_info['OwnerNameFull']; ?>" /><br />
       </li>
       <li class="list-group-item">
-        Owner's Name Brief: <input type="text" value="<?php echo $site_info['OwnerNameBrief']; ?>" /><br />
+        <?php echo $this->lang->line('owner_brief_name'); ?>: <input type="text" value="<?php echo $site_info['OwnerNameBrief']; ?>" /><br />
       </li>
     </ul>
-    <input type="submit" value="Submit"/>
+    <input type="submit" value="<?php echo $this->lang->line('submit'); ?>"/>
   </form>
 </main>

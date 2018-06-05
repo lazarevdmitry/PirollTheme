@@ -48,6 +48,23 @@ $lang['project_share'] = 'Поделиться';
 $lang['prev_project'] = 'Предыдущий проект';
 $lang['next_project'] = 'Следующий проект';
 // Admin pages
+$lang['login_name'] = 'Логин';
+$lang['password'] = 'Пароль';
+
+$lang['show_site'] = 'Показать сайт';
+$lang['logout'] = 'Выйти';
+$lang['submit'] = 'Отправить';
+
+$lang['main_page_info'] = 'Основная информация';
+$lang['home_page_info'] = 'Домашняя страница';
+$lang['projects_page_info'] = 'Проекты';
+$lang['about_page_info'] = 'О сайте';
+$lang['messages_page_info'] = 'Сообщения';
+// Main info page
+$lang['year'] = 'Текущий год';
+$lang['owner_full_name'] = 'Полное наименование собственника';
+$lang['owner_brief_name'] = 'Краткое наименование собственника';
+
 // Projects page
 $lang['project_name'] = 'Название проекта';
 $lang['project_image'] = 'Прикрепленное изображение';
@@ -57,3 +74,12 @@ $lang['project_content'] = 'Описание проекта';
 $lang['save_project'] = 'Сохранить проект';
 $lang['delete_project'] = 'Удалить проект';
 $lang['new_project'] = 'Создать новый проект';
+// Home page
+$lang['home_header'] = 'Заголовок на главной странице';
+$lang['home_description'] = 'Описание';
+// About page
+$lang['about_header'] = 'Заголовок на главной странице';
+$lang['about_description'] = 'Описание';
+// Messages page
+$lang['message_title'] = 'Заголовок сообщения';
+$lang['message_text'] = 'Текст сообщения';

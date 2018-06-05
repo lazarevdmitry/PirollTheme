@@ -87,10 +87,10 @@
   </div> <!-- End of .footer-container -->
 </footer>
 </div> <!-- End of .wrapper  -->
-<script src="/js/html5shiv.min.js"></script>
-<script src="/js/html5shiv-printshiv.min.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <script>
+<script src="/js/html5shiv.min.js" async></script>
+<script src="/js/html5shiv-printshiv.min.js" async></script>
+<!-- Yandex.Metrika counter -->
+<script async>
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
@@ -121,8 +121,8 @@
       </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    <script src='/vendor/components/jquery/jquery.min.js'></script>
-    <script src='/js/app.js'></script>
+    <!-- <script src='/vendor/components/jquery/jquery.min.js' async></script>-->
+    <!-- <script src='/js/app.js?v=<?php echo date('d.m.Y');?>'></script>-->
   </body>
 
 </html>

@@ -37,20 +37,29 @@
 
         <ul class="nav nav-pills">
           <li role="presentation">
-            <a class="nav-link" href="/" target="_blank">Show site</a>
+            <a class="nav-link" href="/" target="_blank"><?php echo $this->lang->line('show_site'); ?></a>
           </li>
           <li role="presentation">
-            <a class="nav-link" href="/admin/logout">Logout</a>
+            <a class="nav-link" href="/admin/logout"><?php echo $this->lang->line('logout'); ?></a>
           </li>
         </ul>
       </nav>
       <aside class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
         <ul class="nav nav-pills nav-stacked">
           <li>
-            <a href="/admin/info">Основная информация</a>
+            <a href="/admin/info"><?php echo $this->lang->line('main_page_info'); ?></a>
           </li>
           <li>
-            <a href="/admin/projects">Проекты</a>
+            <a href="/admin/home"><?php echo $this->lang->line('home_page_info'); ?></a>
+          </li>
+          <li>
+            <a href="/admin/projects"><?php echo $this->lang->line('projects_page_info'); ?></a>
+          </li>
+          <li>
+            <a href="/admin/about"><?php echo $this->lang->line('about_page_info'); ?></a>
+          </li>
+          <li>
+            <a href="/admin/submissions"><?php echo $this->lang->line('messages_page_info'); ?></a>
           </li>
         </ul>
       </aside>
